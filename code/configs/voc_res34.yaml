@@ -1,0 +1,12 @@
+output_folder: "../logs"
+dataset:
+  img_folder: "../data/VOCdevkit/VOC2007/JPEGImages"
+  json_folder: "../data"
+input:
+  img_min_size: [288, 320, 352, 384, 416, 448, 480]
+  img_max_size: 640
+model:
+  backbone: "resnet34"
+  fpn_feats_dim: 256
+opt:
+  epochs: 8

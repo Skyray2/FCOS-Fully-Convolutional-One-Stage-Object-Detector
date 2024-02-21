@@ -1,0 +1,15 @@
+output_folder: "../logs"
+dataset:
+  name: "coco_minitrain_25k"
+  img_folder: "../data/coco_minitrain_25k/images/train2017"
+  json_folder: "../data/coco_minitrain_25k/annotations/"
+input:
+  img_min_size: [288, 320, 352, 384, 416, 448, 480]
+  img_max_size: 640
+model:
+  backbone: "resnet18"  
+  fpn_feats_dim: 256
+  num_classes: 80
+opt:
+  epochs: 8
+  learning_rate: 0.001

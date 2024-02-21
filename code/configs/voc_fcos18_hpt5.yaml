@@ -1,0 +1,15 @@
+output_folder: "../logs"
+dataset:
+  img_folder: "../data/VOCdevkit/VOC2007/JPEGImages"
+  json_folder: "../data"
+loader:
+  batch_size: 32
+input:
+  img_min_size: [288, 320, 352, 384, 416, 448, 480]
+  img_max_size: 640
+model:
+  fpn_feats_dim: 128
+opt:
+  epochs: 100
+  weight_decay: 0.0005
+  learning_rate: 0.001
